@@ -88,7 +88,7 @@ pub fn main_js() -> Result<(), JsValue> {
                 300.0,
                 sprite.frame.w.into(),
                 sprite.frame.h.into(),
-            );        
+            ).expect("unable to draw image");        
             idx += 1;
             if idx > 8 {
                 idx = 1;
